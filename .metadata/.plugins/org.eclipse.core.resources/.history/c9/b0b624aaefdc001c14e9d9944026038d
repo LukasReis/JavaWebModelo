@@ -1,0 +1,16 @@
+package testes;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+import hibernate.HibernateUtil;
+
+public class TesteHibernate {
+
+	@Test
+	public void testHibernateUtil() {
+		
+	}
+
+}

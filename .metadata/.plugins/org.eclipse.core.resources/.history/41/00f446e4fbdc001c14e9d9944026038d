@@ -1,0 +1,43 @@
+package testes;
+
+import org.junit.Test;
+
+import dao.DaoGeneric;
+import hibernate.HibernateUtil;
+import model.Pessoa;
+
+public class TesteHibernate {
+
+	@Test
+	public void testHibernateUtil() {
+		HibernateUtil.getEntityManager();
+	}
+
+	@Test
+	public void testSalvarEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Lucas");
+		pessoa.setSobreNome("Reis");
+		pessoa.setIdade(21);
+		pessoa.setEmail("Luke.silvareis@hotmail.com");
+
+		daoGeneric.salvar(pessoa);
+
+	}
+
+	@Test
+	public void testSalvarSegundaEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Leticia");
+		pessoa.setSobreNome("Gomes");
+		pessoa.setIdade(19);
+		pessoa.setEmail("LeticiaGomes@hotmail.com");
+
+		daoGeneric.salvar(pessoa);
+	}
+
+}

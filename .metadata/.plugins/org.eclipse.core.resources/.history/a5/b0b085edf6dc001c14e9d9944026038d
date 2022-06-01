@@ -1,0 +1,10 @@
+package dao;
+
+import javax.persistence.EntityManager;
+import hibernate.HibernateUtil;
+
+public class DaoGeneric {
+	private EntityManager entityManager = HibernateUtil.getEntityManager();
+	
+
+}

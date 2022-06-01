@@ -1,0 +1,148 @@
+package testes;
+
+import org.junit.Test;
+
+import dao.DaoGeneric;
+import hibernate.HibernateUtil;
+import model.Pessoa;
+
+public class TesteSalvar {
+
+	@Test
+	public void testSalvarEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Lucas");
+		pessoa.setSobreNome("Reis");
+		pessoa.setIdade(21);
+		pessoa.setEmail("Luke.silvareis@hotmail.com");
+		pessoa.setSenha("JRSAL");
+
+		daoGeneric.salvar(pessoa);
+
+	}
+
+	@Test
+	public void testSalvarSegundaEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Leticia");
+		pessoa.setSobreNome("Gomes");
+		pessoa.setIdade(19);
+		pessoa.setEmail("LeticiaGomes@hotmail.com");
+
+		daoGeneric.salvar(pessoa);
+	}
+
+	@Test
+	public void testSalvarTerceiraEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Rebeca");
+		pessoa.setSobreNome("Vieira");
+		pessoa.setIdade(25);
+		pessoa.setEmail("RebcsVieria@gmail.com");
+
+		daoGeneric.salvar(pessoa);
+
+	}
+
+	@Test
+	public void testSalvarQuartaEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Marcos");
+		pessoa.setSobreNome("Souza");
+		pessoa.setIdade(15);
+		pessoa.setEmail("Marco@gmail.com");
+
+		daoGeneric.salvar(pessoa);
+
+	}
+
+	@Test
+	public void testSalvarQuinteEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Gabriel");
+		pessoa.setSobreNome("Alcantra");
+		pessoa.setIdade(18);
+		pessoa.setEmail("GabrielAlcantra@gmail.com");
+
+		daoGeneric.salvar(pessoa);
+
+	}
+
+	@Test
+	public void testSalvarSextaEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Suzana");
+		pessoa.setSobreNome("Amorim");
+		pessoa.setIdade(19);
+		pessoa.setEmail("SuAmorim@gmail.com");
+
+		daoGeneric.salvar(pessoa);
+	}
+
+	@Test
+	public void testSalvarSetimaEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Vitor Lucas");
+		pessoa.setSobreNome("Aragão");
+		pessoa.setIdade(21);
+		pessoa.setEmail("ViLuCaAragao@gmail.com");
+
+		daoGeneric.salvar(pessoa);
+
+	}
+
+	@Test
+	public void testSalvarOitavaEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Rafaela");
+		pessoa.setSobreNome("Oliveria");
+		pessoa.setIdade(29);
+		pessoa.setEmail("RafaOliveria@gmail.com");
+
+		daoGeneric.salvar(pessoa);
+
+	}
+
+	@Test
+	public void testSalvarNonaEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Gustavo");
+		pessoa.setSobreNome("Rodrigues");
+		pessoa.setIdade(9);
+		pessoa.setEmail("GustavinhoRodrigis@gmail.com");
+
+		daoGeneric.salvar(pessoa);
+
+	}
+
+	@Test
+	public void testSalvarDecimaEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("Pedro");
+		pessoa.setSobreNome("Alcantra");
+		pessoa.setIdade(18);
+		pessoa.setEmail("PedroAlcantra@gmail.com");
+
+		daoGeneric.salvar(pessoa);
+	}
+}

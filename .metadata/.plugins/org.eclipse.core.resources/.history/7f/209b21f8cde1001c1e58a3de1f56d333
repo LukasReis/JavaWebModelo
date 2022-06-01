@@ -1,0 +1,19 @@
+package testes;
+
+import org.junit.Test;
+
+import dao.DaoGeneric;
+import model.Pessoa;
+
+public class TesteListar {
+	
+	@Test
+	public void testarListagemEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		
+		
+	}
+
+}

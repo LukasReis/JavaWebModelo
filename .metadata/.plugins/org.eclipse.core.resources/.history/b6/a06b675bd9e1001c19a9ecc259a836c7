@@ -1,0 +1,17 @@
+package testes;
+
+import org.junit.Test;
+import dao.DaoGeneric;
+import model.Pessoa;
+
+
+public class TesteEntityManager {
+	
+	@Test
+	public void testeEntityManager() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		
+	}
+	
+
+}

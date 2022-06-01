@@ -1,0 +1,33 @@
+package model;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+@Entity
+@NamedQueries({ @NamedQuery(name = "consultarTodosUsuarios", query = "select p from Pessoa p"), //Qurys personalizadas
+		@NamedQuery(name = "consultarBuscaNome", query = "select p from Pessoa p where p.nome = :nome ")
+
+})
+
+public class Pessoa {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	private String nome;
+	private String sobreNome;
+	private Integer idade;
+	private String email;
+	private String senha;
+
+	
+
+	
+
+}

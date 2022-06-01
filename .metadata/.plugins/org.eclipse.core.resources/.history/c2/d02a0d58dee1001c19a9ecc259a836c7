@@ -1,0 +1,26 @@
+package model;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+@Entity
+public class Telefone {
+
+	@Id
+	@GeneratedValue( strategy = GenerationType.AUTO)  
+	private Long id;
+	private String tipoTelefone;
+	private String numero;
+	
+	@ManyToOne(optional = false, fetch = FetchType.EAGER )
+	private Pessoa pessoa;
+	
+	
+	
+	
+
+}

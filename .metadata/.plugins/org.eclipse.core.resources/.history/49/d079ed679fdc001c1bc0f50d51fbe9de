@@ -1,0 +1,45 @@
+package model;
+
+public class Telefone {
+
+	private Long id;
+	private String tipoTelefone;
+	private String numero;
+
+	
+	//Métodos Acessores e Modificadores
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getTipoTelefone() {
+		return tipoTelefone;
+	}
+
+	public void setTipoTelefone(String tipoTelefone) {
+		this.tipoTelefone = tipoTelefone;
+	}
+
+	public String getNumero() {
+		return numero;
+	}
+
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+
+	//Método toString
+	@Override
+	public String toString() {
+		return "Telefone [id=" + id + ", tipoTelefone=" + tipoTelefone + ", numero=" + numero + "]";
+	}
+	
+	
+	
+	
+
+}

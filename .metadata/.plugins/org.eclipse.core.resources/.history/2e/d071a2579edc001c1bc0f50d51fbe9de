@@ -1,0 +1,63 @@
+package model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType; 
+
+@Entity
+public class Pessoa {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)  
+	private String nome;
+	private String sobreNome;
+	private Integer idade;
+	private String email;
+
+	
+	//Métodos Acessores e Modificadores
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getSobreNome() {
+		return sobreNome;
+	}
+
+	public void setSobreNome(String sobreNome) {
+		this.sobreNome = sobreNome;
+	}
+
+	public Integer getIdade() {
+		return idade;
+	}
+
+	public void setIdade(Integer idade) {
+		this.idade = idade;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	
+	// Método toString
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", sobreNome=" + sobreNome + ", idade=" + idade + ", email=" + email + "]";
+	}
+	
+	
+	
+	
+
+}

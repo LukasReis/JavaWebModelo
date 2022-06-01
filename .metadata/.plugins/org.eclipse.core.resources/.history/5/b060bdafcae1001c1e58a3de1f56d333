@@ -1,0 +1,22 @@
+package testes;
+
+import org.junit.Test;
+
+import dao.DaoGeneric;
+import model.Pessoa;
+
+
+public class TesteAtualizar {
+	
+	
+	@Test
+	public void testarAtulizacaoEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		
+		
+		
+	}
+	
+	
+
+}

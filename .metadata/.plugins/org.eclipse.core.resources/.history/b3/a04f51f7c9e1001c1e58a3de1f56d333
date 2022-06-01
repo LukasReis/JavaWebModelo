@@ -1,0 +1,21 @@
+package testes;
+
+import org.junit.Test;
+
+import dao.DaoGeneric;
+import model.Pessoa;
+
+public class ListarTeste {
+	
+	@Test
+	public void testaListagemEntidade() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setId(505L);
+		pessoa = daoGeneric.listar(pessoa);
+		System.out.println(pessoa);
+		
+	}
+
+}

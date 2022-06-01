@@ -1,0 +1,22 @@
+package testes;
+
+import org.junit.Test;
+import dao.DaoGeneric;
+import model.Pessoa;
+import java.util.List;
+
+public class TesteEntityManager {
+
+	@Test
+	public void testeEntityManager() {
+		DaoGeneric<Pessoa> daoGeneric = new DaoGeneric<Pessoa>();
+		List<Pessoa> listaPessoa = daoGeneric.getEntityManager().createQuery("from Pessoa where nome like '%was%'").getResultList();
+		for(Pessoa pessoa : listaPessoa ) {
+			System.out.println(pessoa);
+		}
+		
+		
+		
+	}
+
+}

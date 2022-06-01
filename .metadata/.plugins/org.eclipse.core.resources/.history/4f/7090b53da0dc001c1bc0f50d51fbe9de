@@ -1,0 +1,8 @@
+package hibernate;
+
+import javax.persistence.EntityManagerFactory;
+
+public class HibernateUtil {
+	public static EntityManagerFactory factory = null;
+
+}

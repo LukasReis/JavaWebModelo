@@ -1,0 +1,11 @@
+package model;
+
+public class Pessoa {
+	
+	private String nome;
+	private String sobreNome;
+	private Integer idade;
+	private String email;
+	
+
+}
